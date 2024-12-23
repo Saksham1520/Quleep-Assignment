@@ -24,7 +24,7 @@ const PORT = process.env.PORT
 app.use("/api", userRoute)
 app.use("/api", postRoute)
 
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, () => {
     connectDB()
     console.log(`Server is runing at port ${PORT}`)
 })
